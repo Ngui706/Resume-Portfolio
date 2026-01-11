@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEPHEN NGUI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/af887df783.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id = "header">
+    <div class="container">
+        <nav>
+            <img src = "Images/logo.png"  alt = "logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full-Stack Junior Developer</p>
+            <h1>Hi, I'm <span>Stephen</span><br> Ngui</h1>
+        </div>
+    </div>
+   </div>
+
+   <div id ="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/about.jpg" alt="about image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-titles">About Me</h1>
+                <p>Hello! I'm Stephen Ngui, a passionate Full-Stack Junior Developer from Kenya. I specialize in creating dynamic and responsive web applications that provide seamless user experiences. With a strong foundation in both front-end and back-end technologies, I am dedicated to building efficient and scalable solutions.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML, CSS, JavaScript</span><br>Designing Responsive Websites</li>
+                        <li><span>React, Node.js, Express</span><br>Building Full-Stack Applications</li>
+                        <li><span>Database Management (MongoDB, MySQL)</span><br>Designing and Managing Databases</li>
+                        <li><span>Version Control (Git, GitHub)</span><br>Collaborating on Projects</li>
+                        <li><span>Google Workspace</span><br>Developing and Managing Documents and Google sites</li>
+                        <li><span>Graphic Design</span><br>Posters, Event Banners, Flyers</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - 2024</span><br>Intern at Kyuso G.O.C CDC</li>
+                        <li><span>2024 - 2025</span><br>Freelance Frontend Developer</li>
+                        <li><span>2025 - Present</span><br>Junior Full-Stack Developer at PLP Academy</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Excel from Kyuso G.O.C CDC</li>
+                        <li><span>2024</span><br>Frontend Self-taught</li>
+                        <li><span>2024</span><br>SQL from HackerRank</li>
+                        <li><span>2025</span><br>Full-Stack from PLP Academy</li>
+                        <li><span>2025</span><br>Google Workspace self-taught</li>
+                        <li><span>2025</span><br>Graphic Design from Youtube</li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>
+ </div>
+
+ <!--services-->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-titles">Services</h1>
+        <div class="services-list">
+            <div class="services-col">
+                <i class="fa-solid fa-object-ungroup"></i>
+                <h2>Web Design</h2>
+                <p>Creating visually appealing and user-friendly website designs that enhance user experience and engagement.</p>
+                <a href="https://www.codecademy.com/">Learn More</a>
+            </div>
+            <div class="services-col">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Building robust and scalable web applications using modern technologies to meet client requirements.</p>
+                <a href="https://www.freecodecamp.org/">Learn More</a>
+            </div>
+            <div class="services-col">
+                <i class="fa-regular fa-image"></i>
+                <h2>Graphic Design</h2>
+                <p>Designing eye-catching graphics for various purposes, including posters, banners, and social media content.</p>
+                <a href="https://www.canva.com/design-school/">Learn More</a>
+            </div>
+            <div class="services-col">
+                <i class="fa-brands fa-google-plus"></i>
+                <h2>Google Workspace</h2>
+                <p>Creating and managing documents, spreadsheets, and presentations using Google Workspace tools.</p>
+                <a href="https://workspace.google.com/">Learn More</a>
+        </div>
+     </div>
+  </div>
+</div>
+
+<!---Portfolio Section--->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-titles">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/project1.png" alt="work1"><br>
+                <div class ="layer">
+                    <h3>Portfolio Website</h3><br>
+                    <p>A Portfolio website for a university student.</p><br>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/project2.png" alt="work2">
+                <div class = "layer">
+                    <h3>Google Site</h3>
+                    <p>A Google Site for our club where members register and access materials for study and further research.</p>
+                     <a href="https://sites.google.com/view/datasphere-club-karu/home/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/project3.png" alt="work3">
+                 <div class = "layer">
+                    <h3>ShughuliHub</h3>
+                    <p>A Service listing web application.</p>
+                     <a href="https://shughulihub1.figma.site/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">View More</a>
+    </div>
+ </div>
+
+ <!--Contact section-->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titles">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>vundingui844@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+254795846971</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Steve050-carl"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/254795846971"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/stephen-vundi-3710902b2/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+        <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+         <button type="submit" class="btn btn2">Submit</button>
+         </form>
+
+         <span id="msg"></span>
+
+            </div>    
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; Stephen Ngui. All rights reserved.<i class="fa-solid fa-face-smile"></i></p>
+    </div>
+    
+ </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+        }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+
+  fetch("https://script.google.com/macros/s/AKfycbzReBl0tG-z3hGVFFEGHqTqpKDTsCTGHS5stlJRPDHHnileSJPWZkxlFJud8beV2PD5/exec", {
+    method: "POST",
+    body: formData
+  })
+
+  .then(response => response.text())
+  .then(result => {
+    alert("Message sent successfully!");
+    this.reset();
+  })
+  .catch(error => {
+    alert("Failed to send message.");
+    console.error(error);
+  });
+});
+</script>
+
+</body>
+</html>
