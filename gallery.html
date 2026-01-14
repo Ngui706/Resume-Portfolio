@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Gallery</title>
+</head>
+
+<style>
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    
+    }
+    .gallery img{
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    h2{
+        text-align: center;
+        font-weight: 500;
+        font-size: 40px;
+        color: green;
+    }
+
+    .gallery img:hover{
+        transform: translateY(-8px);
+        transition: 0.5s;
+        background: scroll;
+        
+
+    }
+</style>
+<body>
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <img src="Images/images/banner.jpg" alt="">
+        <img src="Images/images/poster.jpg" alt="">
+        <img src="Images/images/flyer.jpg" alt="">
+    </div>
+
+    
+</body>
+</html>
