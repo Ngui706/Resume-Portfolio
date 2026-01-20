@@ -12,7 +12,7 @@
    <div id = "header">
     <div class="container">
         <nav>
-            <img src = "Images/logo.png"  alt = "logo" class="logo">
+            <img src = "Images/logo.png" id="logo" alt = "logo" class="logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -231,6 +231,13 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     console.error(error);
   });
 });
+</script>
+
+<script>
+    document.getElementById('logo').addEventListener('click', function() {
+        window.location.href = 'index.html';
+    });
+
 </script>
 
 </body>
