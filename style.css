@@ -20,6 +20,13 @@ body{
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s;
+    margin: auto 0;  
+    position: relative; 
+}
+
+#logo:hover{
+    transform: scale(1.1);
+
 }
 
 #header{
@@ -28,6 +35,12 @@ body{
     background-image: url('Images/photo.jpg');
     background-size:cover;
     background-position: center;
+    background-repeat: no-repeat;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+
 }
 
 .container{
@@ -86,13 +99,20 @@ nav ul li a:hover::after{
 }
 
 .header-text h1{
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 20px;
 }
 
 .header-text h1 span{
 
     color: #ff004f;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.header-text p{
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
 /*---about section---*/
@@ -388,17 +408,36 @@ nav .fas{
 @media only screen and (max-width:468px){
     #header{
         background-image: url('Images/photo.jpg');
+        
     }
 
     .header-text{
-        margin-top: 100%;
-        font-size: 15px;
+        margin-top: 70%;
+        font-size: 30px;
+        font-weight: bolder;
 
     }
 
     .header-text h1{
         font-size: 30px;
+        font-weight: bolder;
     }
+
+    .header-text h1 span{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .header-text p{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .header-text:hover{
+        transform: scale(1.05);
+    }
+
+    
 
     nav .fas{
     display: block;
@@ -462,4 +501,17 @@ nav .fas{
     color: #616161;
     margin-top: -40px;
     display: block;
+}
+
+#logo{
+    width:100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin: auto 0;  
+    position: relative; 
+}
+
+#logo:hover{
+    transform: scale(1.1);
 }
