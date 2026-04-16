@@ -108,6 +108,7 @@ nav ul li a:hover::after{
 .header-text p{
     margin-bottom: 20px;
     font-size: 40px;
+    font-weight: bolder;
 }
 
 /*---about section---*/
