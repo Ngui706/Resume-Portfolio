@@ -3,316 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STEPHEN NGUI</title>
+    <meta name="description" content="Stephen Ngui — Full-Stack Developer building useful, responsive digital products.">
+    <title>Stephen Ngui — Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Images/about11.jpg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/af887df783.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <div id = "header">
-    <div class="container">
-        <nav>
-            <img src = "Images/logo.png" id="logo" alt = "logo" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p style="color: #ff004f;">Full-Stack Developer</p>
-            <h1 style="color: #333;">Hi, I'm <span>Stephen Ngui</span><br></h1>
-            <p style="color: purple;">Creating beautiful and functional websites and web applications that stand out in the digital landscape.</p>
+    <header id="header">
+        <div class="container">
+            <nav aria-label="Main navigation">
+                <a class="brand" href="#header" aria-label="Stephen Ngui home"><span class="brand-mark">SN</span><span>Stephen Ngui</span></a>
+                <button class="menu-toggle" aria-label="Open navigation" aria-controls="sidemenu" aria-expanded="false" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Work</a></li><li><a href="#contact">Contact</a></li>
+                    <li><a class="nav-cta" href="Images/Stephen_Vundi_Ngui_CV (1).pdf" download>Download CV <i class="fa-solid fa-arrow-down"></i></a></li>
+                    <li><button class="menu-close" aria-label="Close navigation" onclick="toggleMenu()"><i class="fas fa-times"></i></button></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <p class="eyebrow"><span></span> Available for meaningful projects</p>
+                <h1>Building digital<br><em>experiences</em> that work.</h1>
+                <div class="hero-bottom"><p class="hero-copy">I'm Stephen, a Kenya-based full-stack developer turning ideas into clear, useful and responsive web products.</p><a class="text-link" href="#portfolio">Explore my work <i class="fa-solid fa-arrow-right"></i></a></div>
+                <div class="hero-meta"><span>01</span><span>Scroll to discover</span><span class="meta-line"></span></div>
+            </div>
         </div>
-    </div>
-   </div>
-
-   <div id ="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="Images/about.jpg" alt="about image">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-titles">About Me</h1>
-                <p>Hello! I'm Stephen Ngui, a passionate Full-Stack Junior Developer from Kenya. I specialize in creating dynamic and responsive web applications that provide seamless user experiences. With a strong foundation in both front-end and back-end technologies, I am dedicated to building efficient and scalable solutions.</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                    <p class="tab-links" onclick="openTab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>HTML, CSS, JavaScript, Tailwind CSS</span><br>Designing Responsive Websites</li>
-                        <li><span>React, Node.js, Express</span><br>Building Full-Stack Applications</li>
-                        <li><span>Database Management (MongoDB, MySQL, PostgreSQL)</span><br>Designing and Managing Databases</li>
-                        <li><span>Version Control (Git, GitHub)</span><br>Collaborating on Projects</li>
-                        <li><span>Google Workspace</span><br>Developing and Managing Documents and Google sites</li>
-                        <li><span>Graphic Design</span><br>Posters, Event Banners, Flyers</li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="experience">
-                    <ul>
-                       <!-- <li><span>2023 - 2024</span><br>Intern at Kyuso G.O.C CDC</li>-->
-                        <li><span>2024 - 2025</span><br>Freelance Frontend Developer</li>
-                        <li><span>2025 - Present</span><br>Freelance Junior Full-Stack Developer and also Intern at Future Interns.</li>
-                        
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2023</span><br>Excel from Kyuso G.O.C CDC</li>
-                        <li><span>2024</span><br>Frontend Self-taught</li>
-                        <li><span>2024</span><br>SQL from HackerRank</li>
-                        <li><span>2025</span><br>Full-Stack from PLP Academy</li>
-                        <li><span>2025</span><br>Google Workspace self-taught</li>
-                        <li><span>2025</span><br>Graphic Design from Youtube</li>
-                    </ul>
-                </div>
-            </div>  
-        </div>
-    </div>
-</div>
- </div>
-
- <!--services-->
- <div id="services">
-    <div class="container">
-        <h1 class="sub-titles">Services</h1>
-        <div class="services-list">
-            <div class="services-col">
-                <i class="fa-solid fa-object-ungroup"></i>
-                <h2>Web Design</h2>
-                <p>Creating visually appealing and user-friendly website designs that enhance user experience and engagement.</p>
-                <a href="https://www.codecademy.com/">Learn More</a>
-            </div>
-            <div class="services-col">
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Development</h2>
-                <p>Building robust and scalable web applications using modern technologies to meet client requirements.</p>
-                <a href="https://www.freecodecamp.org/">Learn More</a>
-            </div>
-            <div class="services-col">
-                <i class="fa-regular fa-image"></i>
-                <h2>Graphic Design</h2>
-                <p>Designing eye-catching graphics for various purposes, including posters, banners, and social media content.</p>
-                <a href="https://www.canva.com/design-school/">Learn More</a>
-            </div>
-            <div class="services-col">
-                <i class="fa-brands fa-google-plus"></i>
-                <h2>Google Workspace</h2>
-                <p>Creating and managing documents, spreadsheets, and presentations using Google Workspace tools.</p>
-                <a href="https://workspace.google.com/">Learn More</a>
-        </div>
-     </div>
-  </div>
-</div>
-
-<!---Portfolio Section--->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-titles">My Work</h1>
-        <h2 style="color: lightgreen;">Some of the projects I have worked on.</h2>
-        <div class="work-list">
-            <div class="work">
-                <img src="Images/project1.png" alt="work1"><br>
-                <div class ="layer">
-                    <h3>Portfolio Website</h3><br>
-                    <p>My personal portfolio website.</p><br>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Images/project2.png" alt="work2">
-                <div class = "layer">
-                    <h3>DataSphere</h3>
-                    <p>A Google Site for our club where members register and access materials for study and further research.</p>
-                     <a href="https://sites.google.com/view/datasphere-club-karu/home/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-           <!--
-            <div class="work">
-                <img src="Images/project3.png" alt="work3">
-                 <div class = "layer">
-                    <h3>Kaamoto Solutions</h3>
-                    <p>A website for a local business that offers traditional foods.</p>
-                     <a href="https://fanuel08.github.io/Kaamoto_solutions/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        -->
-        
-         <!--
-            <div class="work">
-                <img src="Images/project4.png" alt="work4">
-                 <div class = "layer">
-                    <h3>TechSips</h3>
-                    <p>A full-stack web application for a local coffee shop.</p>
-                     <a href="https://campobrew.onrender.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            -->
-           <!--
-            <div class="work">
-                <img src="Images/project5.png" alt="work2">
-                <div class = "layer">
-                    <h3>Club's Portal</h3>
-                    <p>Collaborated in the creation of datasphere club portal to migrate from the one for Google Sites.</p>
-                     <a href="https://datasphereclub.xyz/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        -->
-
-           <div class="work">
-                <img src="Images/project6.png" alt="work2">
-                <div class = "layer">
-                    <h3>HudumaKe</h3>
-                    <p>A Service listing platform for local service providers.</p>
-                     <a href="https://huduma-ke.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-             <div class="work">
-                <img src="Images/project7.png" alt="work2">
-                <div class = "layer">
-                    <h3>ServiceDesk</h3>
-                    <p>Event ticketing system for Internet Service Providers.</p>
-                     <a href="https://service-desk-one-tau.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-             <div class="work">
-                <img src="Images/project8.png" alt="work2">
-                <div class = "layer">
-                    <h3>TechSips</h3>
-                    <p>An online course market platform.</p>
-                     <a href="https://edu-tech-virid.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-
-             <div class="work">
-                <img src="Images/project9.png" alt="work2">
-                <div class = "layer">
-                    <h3>Genesis Coaches</h3>
-                    <p>An online booking platform for a bus company.</p>
-                     <a href="https://genesis-two-gules.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-             <div class="work">
-                <img src="Images/project10.png" alt="work2">
-                <div class = "layer">
-                    <h3>iSTOCK</h3>
-                    <p>A smart inventory control system.</p>
-                     <a href="https://i-stock-phi.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-
-        </div>
-    
-        <a href="gallery.html" class="btn">View More</a>
-    </div>
- </div>
-
- <!--Contact section-->
- <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-titles">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>vundingui844@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>+254795846971</p>
-                <div class="social-icons">
-                    <a href="https://github.com/Ngui706"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://wa.me/254795846971"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.linkedin.com/in/stephen-vundi-3710902b2/"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                
-                <a href="Images/Cv.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-        <form id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-         <button type="submit" class="btn btn2">Submit</button>
-         </form>
-
-         <span id="msg"></span>
-
-            </div>    
-        </div>
-    </div>
-
-    <div class="copyright">
-        <p>Copyright &copy; Stephen Ngui. All rights reserved.</p>
-    </div>
-    
- </div>
-
+    </header>
+    <main>
+        <section id="about" class="section"><div class="container split-grid"><div class="section-heading"><p class="eyebrow"><span></span> The person behind the pixels</p><h2>Curious by nature.<br><em>Practical by design.</em></h2><img class="portrait" src="Images/about.jpg" alt="Stephen Ngui" loading="lazy"></div><div class="about-copy"><p class="lead">Hello, I'm Stephen Ngui, a passionate Full-Stack Junior Developer from Kenya. I create dynamic, responsive web applications that make complex things feel simple.</p><p>With a foundation across front-end, back-end and database technologies, I care about the details that turn a functional product into a memorable experience: thoughtful interfaces, reliable systems and accessible design.</p><div class="stat-row"><div><strong>06+</strong><span>Core disciplines</span></div><div><strong>10+</strong><span>Projects explored</span></div><div><strong>∞</strong><span>Curiosity</span></div></div><div class="skill-cloud" aria-label="Skills"><span>React</span><span>Node.js</span><span>JavaScript</span><span>SQL</span><span>MongoDB</span><span>UI design</span><span>Git</span></div></div></div></section>
+        <section id="services" class="section section-dark"><div class="container"><div class="section-intro"><div><p class="eyebrow"><span></span> What I do</p><h2>From first sketch<br>to <em>final ship.</em></h2></div><p class="intro-note">A flexible skill set for building digital products that are useful, considered and ready for the real world.</p></div><div class="services-list"><article class="service-card"><span class="card-number">01</span><i class="fa-solid fa-object-ungroup"></i><h3>Web design</h3><p>Clear, engaging interfaces shaped around real people and real goals.</p></article><article class="service-card"><span class="card-number">02</span><i class="fa-solid fa-code"></i><h3>Web development</h3><p>Responsive applications built with modern front-end and back-end tools.</p></article><article class="service-card"><span class="card-number">03</span><i class="fa-regular fa-image"></i><h3>Graphic design</h3><p>Eye-catching posters, banners and social graphics with a strong visual point of view.</p></article><article class="service-card"><span class="card-number">04</span><i class="fa-brands fa-google"></i><h3>Google Workspace</h3><p>Organised documents, spreadsheets and collaborative digital workspaces.</p></article></div></div></section>
+        <section id="portfolio" class="section"><div class="container"><div class="section-intro portfolio-heading"><div><p class="eyebrow"><span></span> Selected work</p><h2>Things I've<br><em>made useful.</em></h2></div><a class="text-link" href="gallery.html">View design gallery <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><div class="work-list">
+            <article class="work"><img src="Images/project1.png" alt="Portfolio website project" loading="lazy"><div class="work-info"><div><span class="project-type">Personal project</span><h3>Portfolio Website</h3><p>A personal portfolio designed to put the work first.</p></div><a href="#header" aria-label="View Portfolio Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+            <article class="work"><img src="Images/project2.png" alt="DataSphere club website" loading="lazy"><div class="work-info"><div><span class="project-type">Community platform</span><h3>DataSphere</h3><p>A learning hub where members register and access study materials.</p></div><a href="https://sites.google.com/view/datasphere-club-karu/home/" target="_blank" rel="noopener" aria-label="View DataSphere"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+            <article class="work"><img src="Images/project6.png" alt="HudumaKe service listing platform" loading="lazy"><div class="work-info"><div><span class="project-type">Web application</span><h3>HudumaKe</h3><p>A service listing platform for local service providers.</p></div><a href="https://huduma-ke.vercel.app/" target="_blank" rel="noopener" aria-label="View HudumaKe"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+            <article class="work"><img src="Images/project7.png" alt="ServiceDesk event ticketing system" loading="lazy"><div class="work-info"><div><span class="project-type">Web application</span><h3>ServiceDesk</h3><p>An event ticketing system for internet service providers.</p></div><a href="https://service-desk-one-tau.vercel.app/" target="_blank" rel="noopener" aria-label="View ServiceDesk"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+            <article class="work"><img src="Images/project8.png" alt="TechSips online course platform" loading="lazy"><div class="work-info"><div><span class="project-type">Learning platform</span><h3>TechSips</h3><p>An online course marketplace for learning and growth.</p></div><a href="https://edu-tech-virid.vercel.app/" target="_blank" rel="noopener" aria-label="View TechSips"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+            <article class="work"><img src="Images/project9.png" alt="Genesis Coaches booking platform" loading="lazy"><div class="work-info"><div><span class="project-type">Booking platform</span><h3>Genesis Coaches</h3><p>An online booking platform for a bus company.</p></div><a href="https://genesis-two-gules.vercel.app/" target="_blank" rel="noopener" aria-label="View Genesis Coaches"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+            <article class="work"><img src="Images/project10.png" alt="iSTOCK inventory control system" loading="lazy"><div class="work-info"><div><span class="project-type">Business tool</span><h3>iSTOCK</h3><p>A smart inventory control system for growing businesses.</p></div><a href="https://i-stock-phi.vercel.app/" target="_blank" rel="noopener" aria-label="View iSTOCK"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+        </div></div></section>
+        <section id="experience" class="section section-dark"><div class="container split-grid experience-grid"><div><p class="eyebrow"><span></span> Experience & learning</p><h2>Always<br><em>in progress.</em></h2></div><div class="timeline"><div class="timeline-item"><span>2025 — present</span><h3>Junior Full-Stack Developer & Intern</h3><p>Freelance work alongside an internship at Future Interns.</p></div><div class="timeline-item"><span>2024 — 2025</span><h3>Freelance Frontend Developer</h3><p>Designing and building responsive web experiences for clients and personal projects.</p></div><div class="timeline-item"><span>2023 — present</span><h3>Continuous learning</h3><p>Full-Stack development through PLP Academy, HackerRank, self-directed study and hands-on projects.</p></div></div></div></section>
+        <section id="contact" class="section contact-section"><div class="container contact-grid"><div><p class="eyebrow"><span></span> Have a project in mind?</p><h2>Let's make<br><em>something matter.</em></h2><p class="contact-note">I'm open to conversations about web products, creative collaborations and opportunities to grow.</p><div class="contact-details"><a href="mailto:vundingui844@gmail.com"><i class="fa-solid fa-envelope"></i>vundingui844@gmail.com</a><a href="tel:+254795846971"><i class="fa-solid fa-phone"></i>+254 795 846 971</a></div><div class="social-icons"><a href="https://github.com/Ngui706" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://wa.me/254795846971" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a><a href="https://www.linkedin.com/in/stephen-vundi-3710902b2/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></div></div><form id="contactForm"><label for="name">Name</label><input id="name" type="text" name="name" placeholder="Your name" required><label for="email">Email</label><input id="email" type="email" name="email" placeholder="you@example.com" required><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell me a little about your project" required></textarea><button type="submit" class="button">Send message <i class="fa-solid fa-arrow-right"></i></button><span id="msg" role="status"></span></form></div></section>
+    </main>
+    <footer class="copyright"><div class="container"><span>© 2026 Stephen Ngui</span><span>Designed & built with intent.</span><a href="#header">Back to top ↑</a></div></footer>
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function openTab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-        }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-    }
+        const sidemenu = document.getElementById('sidemenu'); const menuToggle = document.querySelector('.menu-toggle');
+        function toggleMenu() { const open = sidemenu.classList.toggle('open'); menuToggle.setAttribute('aria-expanded', open); }
+        document.querySelectorAll('#sidemenu a').forEach(link => link.addEventListener('click', () => { sidemenu.classList.remove('open'); menuToggle.setAttribute('aria-expanded', 'false'); }));
+        document.getElementById('contactForm').addEventListener('submit', function (e) { e.preventDefault(); const msg = document.getElementById('msg'); msg.textContent = 'Sending…'; fetch('https://script.google.com/macros/s/AKfycbzReBl0tG-z3hGVFFEGHqTqpKDTsCTGHS5stlJRPDHHnileSJPWZkxlFJud8beV2PD5/exec', { method: 'POST', body: new FormData(this) }).then(response => response.text()).then(() => { msg.textContent = 'Message sent — thank you!'; this.reset(); }).catch(() => { msg.textContent = 'Something went wrong. Please email me directly.'; }); });
     </script>
-
-    <script>
-        var sidemenu = document.getElementById('sidemenu');
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-
-    <script>
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const formData = new FormData(this);
-
-  fetch("https://script.google.com/macros/s/AKfycbzReBl0tG-z3hGVFFEGHqTqpKDTsCTGHS5stlJRPDHHnileSJPWZkxlFJud8beV2PD5/exec", {
-    method: "POST",
-    body: formData
-  })
-
-  .then(response => response.text())
-  .then(result => {
-    alert("Message sent successfully!");
-    this.reset();
-  })
-  .catch(error => {
-    alert("Failed to send message.");
-    console.error(error);
-  });
-});
-</script>
-
-<script>
-    document.getElementById('logo').addEventListener('click', function() {
-        window.location.href = 'index.html';
-    });
-
-</script>
-
 </body>
 </html>
